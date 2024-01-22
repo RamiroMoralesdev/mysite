@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Instrument+Serif&family=Playfair+Display&display=swap');
+
+
+
+:root{
+    --background: #0C151D;
+    --primary-color: #0a0a23;
+    --shadow: #087ec4;
+    --text-color: #fff;
+    --secondary-text-color: #ccc;
+    --header-table: #4a5568;
+    --nav-item: #ff8e43
+}
+
+body{
+    background-color: var(--shadow);
+}
+
+nav{
+    width: 100%;
+    text-align: center;
+}
+
+.welcome{
+    width: 500px;
+    height: 620px;
+    margin: 0 auto;
+}
+
+.about-me{
+    width: 100%;
+}
+
+.icon-external_link{
+    width: 0;
+}
+
+.about-me a{
+    text-decoration: underline;
+}
+
+
+.skills{
+    display: none;
+}
+

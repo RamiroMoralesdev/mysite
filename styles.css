@@ -1,0 +1,297 @@
+ @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Instrument+Serif&family=Playfair+Display&display=swap');
+
+
+
+:root{
+    --background: #0C151D;
+    --primary-color: #0a0a23;
+    --shadow: #087ec4;
+    --text-color: #fff;
+    --secondary-text-color: #ccc;
+    --header-table: #4a5568;
+    --nav-item: #ff8e43
+}
+
+body{
+    background-color: var(--background);
+    cursor: url(./assets/icons/icons8-linkedin-100.png)
+}
+
+nav{
+    width: 50%;
+    background-color: var(--header-table);
+    margin: 0 auto;
+    text-align: center;
+    border: 1px var(--nav-item) solid;
+    margin-bottom: 50px;
+}
+
+nav ol{
+    padding: 10px;
+}
+
+nav ol a{
+    font-size: 20px;
+    margin-left: 30px;
+    color: var(--nav-item);
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: color 0.3s;
+}
+
+nav ol a:hover{
+    color: var(--secondary-text-color);
+}
+
+nav .icons img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    transition: transform, 1s;
+}
+
+nav .icons img:hover{
+    transform: scale(2);
+}
+
+.welcome{
+    width: 500px;
+    height: 620px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px var(--shadow);
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.buttons{
+    width: 30%;
+    padding-top: 10px;
+}
+
+button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.button_red{
+    background-color: red;
+}
+
+.button_yellow{
+    background-color: yellow;
+}
+
+.button_green{
+    background-color: green;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.welcome h1{
+    color: var(--text-color);
+    font-family: 'Grape Nuts', cursive;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.welcome h2{
+    color: var(--secondary-text-color);
+    margin-top: 0;
+}
+
+.welcome hr{
+    margin-top: 100px;
+}
+
+.welcome p{
+    color: var(--text-color);
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.about-me{
+    width: 80%;
+    height: 260px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+
+.about-me h1{
+    color: var(--text-color);
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.about-me p{
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.icon-external_link{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: inline;
+}
+
+.about-me a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.skills{
+    width: 100%;
+    background-color: var(--primary-color);
+    border: 3px var(--secondary-text-color) solid;
+    margin: 15px;
+}
+
+.skills img{
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+}
+
+
+.studies h1{
+    margin-top: 55px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.studies table{
+    width: 80%;   
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 20px;
+    text-align: center;
+    border: 20px var(--primary-color) solid;
+    border-radius: 15px;
+    box-shadow: 0px 5px 30px var(--shadow);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.studies th{
+    color: var(--header-table);
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.studies tr{
+    background-color: var(--primary-color);
+    
+}
+
+.studies td{
+    padding: 16px;
+    border-bottom: 1px var(--text-color) solid;
+
+}
+
+.certifications{
+    width: 100%;
+    margin-top: 50px;
+    align-items: left;
+}
+
+.certifications h1{
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.certifications article img{
+    width: 400px;
+}
+
+
+.proyects{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.proyects h1{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.proyects article{
+    background-color: var(--header-table);
+    width: 500px;
+    height: 600px;
+    border: 10px var(--primary-color) solid;
+    border-radius: 15px;
+}
+
+
+.separator-vertical{
+    width: 100px;
+    position: relative;
+    top: 510px;
+    transform: rotate(90deg);
+}
+
+.contact{
+    width: 50%;
+    height: 500px;
+    background-color: var(--shadow);
+    border-radius: 15px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.contact h2{
+    font-size: 20px;
+}
+
+.contact form{
+    text-align: center;
+}
+
+.contact form label{
+    display: block;
+    color: var(--secondary-text-color);
+}
+
+.contact form input{
+    background-color: var(--text-color);
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.contact form input[type="email"] {
+    width: 500px;
+}
+
+.contact form select{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#mensaje{
+    width: 500px;
+    height: 100px;
+}
+
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: var(--primary-color);
+    padding: 40px 0 40px 0;
+}
