@@ -150,14 +150,46 @@ button{
     color: var(--text-color);
 }
 
-.skills{
+
+.skills-desktop{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.background-skill{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    background-color: red;
+    text-align: center;
+    
+
+}
+
+.background-skill img{
+    width: 144px;
+    margin-bottom: 0;
+}
+
+.background-skill p{
+    color: var(--text-color);
+    font-size: 30px;
+    margin-top: 0;
+}
+
+
+.skills-mobile{
+    display: none;
     width: 100%;
     background-color: var(--primary-color);
     border: 3px var(--secondary-text-color) solid;
     margin: 15px;
 }
 
-.skills img{
+.skills-mobile img{
     width: 144px;
     height: 144px;
     object-fit: cover;

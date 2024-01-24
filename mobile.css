@@ -39,8 +39,20 @@ nav{
     text-decoration: underline;
 }
 
+.skills-mobile{
+    width: 100%;
+    height: 200px;
+    display: block;
 
-.skills{
+}
+
+.skills-mobile img{
+    width: 144px;
+    height: 100px;
+    display: inline;
+}
+
+.skills-desktop{
     display: none;
 }
 
