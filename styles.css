@@ -181,20 +181,6 @@ button{
 }
 
 
-.skills-mobile{
-    display: none;
-    width: 100%;
-    background-color: var(--primary-color);
-    border: 3px var(--secondary-text-color) solid;
-    margin: 15px;
-}
-
-.skills-mobile img{
-    width: 144px;
-    height: 144px;
-    object-fit: cover;
-}
-
 
 .studies h1{
     margin-top: 55px;

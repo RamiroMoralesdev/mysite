@@ -22,13 +22,13 @@ nav{
 }
 
 .welcome{
-    width: 500px;
-    height: 620px;
+    width: 600px;
+    height: 720px;
     margin: 0 auto;
 }
 
 .about-me{
-    width: 100%;
+    width: 600px;
 }
 
 .icon-external_link{
@@ -40,16 +40,19 @@ nav{
 }
 
 .skills-mobile{
-    width: 100%;
-    height: 200px;
-    display: block;
+    width: 1000px;
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+    background-color: var(--primary-color);
+    border: 3px var(--secondary-text-color) solid;
 
 }
 
 .skills-mobile img{
     width: 144px;
     height: 100px;
-    display: inline;
+    object-fit: cover;
 }
 
 .skills-desktop{
