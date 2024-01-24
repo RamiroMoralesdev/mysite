@@ -22,13 +22,15 @@ nav{
 }
 
 .welcome{
-    width: 600px;
-    height: 720px;
+    width: 1000px;
+    height: 820px;
     margin: 0 auto;
 }
 
 .about-me{
-    width: 600px;
+    width: 1000px;
+    height: 700px;
+    font-size: 50px;
 }
 
 .icon-external_link{
