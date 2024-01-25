@@ -22,15 +22,14 @@ nav{
 }
 
 .welcome{
-    width: 600px;
-    height: 720px;
+    width: 500px;
+    height: 620px;
     margin: 0 auto;
 }
 
 .about-me{
-    width: 720px;
-    height: 400px;
-    font-size: 50px;
+    width: 520px;
+    height: 300px;
 }
 
 .icon-external_link{
@@ -55,9 +54,18 @@ nav{
     width: 144px;
     height: 100px;
     object-fit: cover;
+    animation: imageLoop 5s ease-in-out infinite;
 }
 
 .skills-desktop{
     display: none;
 }
 
+@keyframes imageLoop {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-500%); 
+    }
+  }
