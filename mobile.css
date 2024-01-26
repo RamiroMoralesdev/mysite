@@ -14,6 +14,7 @@
 
 body{
     background-color: var(--shadow);
+    margin: 0;
 }
 
 nav{
@@ -21,10 +22,15 @@ nav{
     text-align: center;
 }
 
+
+.content{
+    margin: 0 auto !important;
+}
+
 .welcome{
     width: 500px;
     height: 620px;
-    margin: 0 auto;
+    
 }
 
 .about-me{
@@ -41,7 +47,7 @@ nav{
 }
 
 .skills-mobile{
-    width: 1000px;
+    width: 700px;
     height: 100px;
     margin-top: 15px;
     display: flex;
@@ -54,7 +60,10 @@ nav{
     width: 144px;
     height: 100px;
     object-fit: cover;
-    animation: imageLoop 5s ease-in-out infinite;
+    animation-name: imageLoop;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .skills-desktop{
@@ -62,10 +71,11 @@ nav{
 }
 
 @keyframes imageLoop {
-    0% {
+    from {
       transform: translateX(0%);
     }
-    100% {
-      transform: translateX(-500%); 
+
+    to {
+        transform: translateX(-500%);
     }
   }
