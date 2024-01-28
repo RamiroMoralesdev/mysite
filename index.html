@@ -253,15 +253,15 @@
             <h1>Pongamonos en Contacto.</h1>
             <h2>Rellena este formulario y te dare una respuesta a la brevedad.</h2>
     
-            <form action="">
+            <form action="https://formsubmit.co/a0504390007b0e6a555b5c6892be398f" method="POST"">
                 <label for="name">Nombre: *</label>
-                <input type="text" required id="name">
+                <input type="text" required id="name" name="nombre">
     
                 <label for="surname">Apellido: *</label>
                 <input type="text" required name="surname">
     
                 <label for="correo">Direccion de correo electronico *</label>
-                <input type="email" required name="" id="correo">
+                <input type="email" required name="email" id="correo">
     
                 <label for="motive">Motivo</label>
                 <select name="" id="motive">
@@ -273,9 +273,12 @@
                 </select>
     
                 <label for="mensaje">Mensaje *</label>
-                <input type="text" id="mensaje">
+                <input type="text" id="mensaje" minlength="20" name="msg">
 
                 <button type="submit" value="Enviar Formulario">Enviar</button>
+
+                <input type="hidden" name="_next" value="https://ramiromorales.tech">
+                <input type="hidden" name="_captcha" value="false"> <!--Validacion formulario-->
             </form>
         </section>        
 

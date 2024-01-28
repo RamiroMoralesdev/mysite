@@ -301,6 +301,14 @@ button{
     margin-top: 10px;
 }
 
+.contact form input:invalid{
+    border: 5px red solid;
+}
+
+.contact form input:valid{
+    border: 5px green solid;
+}
+
 .contact form input[type="email"] {
     width: 500px;
 }
@@ -315,6 +323,10 @@ button{
     height: 100px;
     margin-left: 50px;
     display: block;
+}
+
+#mensaje:invalid{
+    border: 5px red solid;
 }
 
 
