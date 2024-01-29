@@ -286,6 +286,7 @@ button{
 }
 
 .contact form{
+    width: 100%;
     text-align: center;
 }
 
@@ -296,7 +297,7 @@ button{
 
 .contact form input{
     background-color: var(--text-color);
-    width: 300px;
+    width: 40%;
     height: 30px;
     margin-top: 10px;
 }
@@ -310,7 +311,7 @@ button{
 }
 
 .contact form input[type="email"] {
-    width: 500px;
+    width:  80%;
 }
 
 .contact form select{
@@ -319,7 +320,7 @@ button{
 }
 
 #mensaje{
-    width: 500px;
+    width: 80%;
     height: 100px;
     margin-left: 50px;
     display: block;
@@ -333,6 +334,7 @@ button{
 .contact button{
     width: 100px;
     height: 50px;
+    max-height: 50px;
     border-radius: 0;
     margin-top: 30px;
     background-color: var(--shadow);
@@ -352,4 +354,80 @@ footer{
     height: 700px;
     background-color: var(--header-table);
     padding: 40px 0 40px 0;
+}
+
+
+
+
+@media screen and (max-width: 430px) {
+
+
+    .content{
+        width: 100vw;
+        margin-left: 30px;
+    }
+
+    nav{
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .about-me{
+        width: 120vw;
+        height: 50%;
+    }
+
+    .skills-mobile{
+        width: 120vw;
+        height: 100px;
+        margin-top: 15px;
+        display: flex;
+        overflow: hidden;
+        background-color: var(--primary-color);
+        border: 3px var(--secondary-text-color) solid;
+    }
+
+    .skills-mobile img{
+        width: 144px;
+        height: 100px;
+        object-fit: cover;
+        animation-name: imageLoop;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .skills-desktop{
+        display: none;
+    }
+    
+    @keyframes imageLoop {
+        from {
+          transform: translateX(0%);
+        }
+    
+        to {
+            transform: translateX(-550%);
+        }
+      }
+
+      .studies{
+        margin: 0 !important;
+      }
+
+    .studies table{
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .contact{
+        width: 100vw
+
+    }
+
+    .contact form{
+        width: 100vw;
+    }
+
+
 }

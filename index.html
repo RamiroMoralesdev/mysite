@@ -6,7 +6,6 @@
     <meta name="description" content="Portfolio de Ramiro Morales | Web Developer and Designer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" media="only screen and ( max-width: 480px)" href="mobile.css">
     <title>Ramiro Morales | Web Developer and Designer</title>
 </head>
 <body>
@@ -98,6 +97,7 @@
 
 <div class="background-skill">
     <img src="./assets/Git_icon.png" alt="Git">
+    <p>Aficionado</p>
 </div>
 
 <div class="background-skill">
@@ -273,7 +273,9 @@
                 </select>
     
                 <label for="mensaje">Mensaje *</label>
-                <input type="text" id="mensaje" minlength="20" name="msg">
+                <textarea id="mensaje" minlength="20" name="msg" cols="30" rows="10">
+
+                </textarea>
 
                 <button type="submit" value="Enviar Formulario">Enviar</button>
 
