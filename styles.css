@@ -11,10 +11,15 @@
     --header-table: #4a5568;
 }
 
+#error{
+    display: none;
+}
+
 body{
     background-color: var(--background);
     cursor: url(./assets/icons/icons8-linkedin-100.png)
 }
+
 
 nav{
     width: 50%;
@@ -53,8 +58,9 @@ nav .icons img:hover{
 }
 
 .welcome{
-    width: 500px;
+    width: 100vw;
     height: 620px;
+    max-width: 500px;
     background-color: var(--primary-color);
     border-radius: 50px;
     box-shadow: 0px 5px 30px var(--shadow);
@@ -118,7 +124,8 @@ button{
 }
 
 .about-me{
-    width: 80%;
+    width: 100vw;
+    max-width: 500px;
     height: 260px;
     background-color: var(--primary-color);
     margin: 0 auto;
@@ -350,7 +357,7 @@ button{
 
 footer{
     margin-top: 100px;
-    width: 100%;
+    width: 100vw;
     height: 700px;
     background-color: var(--header-table);
     padding: 40px 0 40px 0;
@@ -359,26 +366,39 @@ footer{
 
 
 
-@media screen and (max-width: 430px) {
-
+@media screen and (min-width: 300px) and (max-width: 400px) {
 
     .content{
-        width: 100vw;
-        margin-left: 30px;
+        display: none;
+
+    }
+    
+    #error{
+        display: block;
+    }
+
+    body{
+        max-width: 400px;
     }
 
     nav{
-        width: 100%;
-        margin-left: 50px;
+        width: 100vw;
+        display: grid;
+        
+        
     }
 
+    
+
+
+
     .about-me{
-        width: 120vw;
-        height: 50%;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     .skills-mobile{
-        width: 120vw;
+        width: 300vw;
         height: 100px;
         margin-top: 15px;
         display: flex;
@@ -412,22 +432,9 @@ footer{
       }
 
       .studies{
-        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
-
-    .studies table{
-        width: 100%;
-        margin-left: 0 !important;
-    }
-
-    .contact{
-        width: 100vw
-
-    }
-
-    .contact form{
-        width: 100vw;
-    }
-
-
+    
 }
