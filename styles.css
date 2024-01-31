@@ -17,7 +17,6 @@
 
 body{
     background-color: var(--background);
-    cursor: url(./assets/icons/icons8-linkedin-100.png)
 }
 
 
@@ -57,10 +56,14 @@ nav .icons img:hover{
     transform: scale(2);
 }
 
-.welcome{
+.content{
     width: 100vw;
-    height: 620px;
+}
+
+.welcome{
+    width: 50vw;
     max-width: 500px;
+    height: 620px;
     background-color: var(--primary-color);
     border-radius: 50px;
     box-shadow: 0px 5px 30px var(--shadow);
@@ -75,10 +78,12 @@ nav .icons img:hover{
 }
 
 button{
-    width: 20px;
+    width: 10px;
     height: 20px;
     border-radius: 50px;
     margin-right: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .button_red{
@@ -368,17 +373,8 @@ footer{
 
 @media screen and (min-width: 300px) and (max-width: 400px) {
 
-    .content{
-        display: none;
-
-    }
-    
     #error{
-        display: block;
-    }
-
-    body{
-        max-width: 400px;
+        display: block
     }
 
     nav{
@@ -389,12 +385,18 @@ footer{
     }
 
     
+    .content{
+        width: 100vw;
+        margin-left: 30px;
+    }
 
-
+    .welcome{
+        width: 100vw;
+    }
 
     .about-me{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        width: 120vw;
+        height: 50%;
     }
 
     .skills-mobile{
@@ -431,10 +433,29 @@ footer{
         }
       }
 
-      .studies{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
     
+  .studies{
+    margin: 0 !important;
+  }
+
+.studies table{
+    width: 100%;
+    margin-left: 0 !important;
 }
+
+
+.footer{
+    width: 100vw;
+}
+.contact{
+    width: 100vw
+
+}
+
+.contact form{
+    width: 100vw;
+}
+
+
+}
+
