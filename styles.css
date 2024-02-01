@@ -11,9 +11,6 @@
     --header-table: #4a5568;
 }
 
-#error{
-    display: none;
-}
 
 body{
     background-color: var(--background);
@@ -373,9 +370,6 @@ footer{
 
 @media screen and (min-width: 300px) and (max-width: 400px) {
 
-    #error{
-        display: block
-    }
 
     nav{
         width: 100vw;
@@ -400,7 +394,7 @@ footer{
     }
 
     .skills-mobile{
-        width: 300vw;
+        width: 100vw;
         height: 100px;
         margin-top: 15px;
         display: flex;
@@ -444,8 +438,8 @@ footer{
 }
 
 
-.footer{
-    width: 100vw;
+footer{
+    width: 150vw;
 }
 .contact{
     width: 100vw
