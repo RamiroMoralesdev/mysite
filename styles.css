@@ -126,10 +126,10 @@ button{
 }
 
 .about-me{
-    width: 100vw;
-    max-width: 500px;
+    width: 80vw;
     height: 260px;
     background-color: var(--primary-color);
+    border-radius: 15px;
     margin: 0 auto;
 }
 
