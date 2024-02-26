@@ -132,7 +132,7 @@
       justify-content: center;
 
       & a {
-        color: var(--secondary-text-color);
+        color: var(--background);
         text-decoration: none;
       }
     }
