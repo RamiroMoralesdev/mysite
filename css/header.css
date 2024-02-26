@@ -1,0 +1,174 @@
+:root {
+  --background: #0c151d;
+  --primary-color: #0a0a23;
+  --shadow: #087ec4;
+  --text-color: #fff;
+  --secondary-text-color: #ccc;
+  --header-table: #4a5568;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-color: var(--text-color) var(--primary-color);
+}
+
+.header {
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.welcome {
+  width: 50vw;
+  max-width: 500px;
+  height: 620px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  box-shadow: 0px 5px 30px var(--shadow);
+  margin: 100px;
+  text-align: center;
+  display: block;
+
+  & .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  & h1 {
+    color: var(--text-color);
+    font-family: cursive, sans-serif;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  & h2 {
+    color: var(--secondary-text-color);
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 0;
+  }
+
+  & hr {
+    margin-top: 100px;
+  }
+
+  & p {
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin-top: 0;
+    text-wrap: balance;
+  }
+}
+
+.buttons {
+  width: 30%;
+  padding-top: 10px;
+
+  & button {
+    width: 10px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  & .button_red {
+    background-color: red;
+  }
+
+  & .button_yellow {
+    background-color: yellow;
+  }
+
+  & .button_green {
+    background-color: green;
+  }
+}
+
+.studies {
+  width: 40%;
+  height: 80%;
+  background-color: var(--background);
+  color: var(--secondary-text-color);
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-y: scroll;
+  scrollbar-color: var(--shadow) var(--primary-color);
+  scrollbar-width: thin;
+  text-align: center;
+
+  & article {
+    width: 100%;
+    height: 20%;
+    background-color: var(--header-table);
+    border-left: 5px solid var(--shadow);
+    margin-top: 10px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    & h1 {
+      font-size: 1.3em;
+      color: var(--text-color);
+      text-align: left;
+      margin-left: 150px;
+    }
+
+    & h2{
+      font-size: 1em;
+    }
+
+    & button{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & a {
+        color: var(--secondary-text-color);
+        text-decoration: none;
+      }
+    }
+  }
+
+  & .yt{
+    background-image: url(../assets/icons/academies/yt.jpg);
+  }
+
+  & .fcc{
+    background-image: url(../assets/icons/academies/fcc.png);
+  }
+
+  & .udemy{
+    background-image: url(../assets/icons/academies/udemy.png);
+  }
+
+  & .todocode {
+    background-image: url(../assets/icons/academies/tca.png);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .welcome {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .studies{
+    width: 100%;
+  }
+}

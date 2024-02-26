@@ -2,71 +2,120 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta title="Ramiro Morales dev">
-    <meta name="description" content="Portfolio de Ramiro Morales | Web Developer and Designer">
+    <meta title="RamiroMoralesdev">
+    <meta name="description" content="Ramiro Morales | Web Developer and Designer">
+    <meta name="author" content="RamiroMoralesdev">
     <meta name="keywords" content="Ramiro Morales, RamiroMoralesdev, Diseño de paginas web, Ramiro Morales Funes, Ramiro Morales Programador, Ramiro Morales RM Producciones, RM Producciones ramigenio,">
     <meta name="viewport" content="width=400, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="icon" href="./assets/favicon transparent.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Protest+Strike&display=swap" rel="stylesheet">
+
     <title>Ramiro Morales | Web Developer and Designer</title>
 </head>
 <body>
     <nav>
         <ol>
             <a href="#">Home</a>
-            <a href="#studies">Estudios</a>
-            <!--
-            <a href="">Proyectos</a>
-
-            -->
+            <a href="#skills">Skills</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="cv/CV.html">CV</a>
             <a href="#contact">Contacto</a>
         </ol>
 
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/ramiro-morales-909a12219/" target="_blank">
-                <img src="./assets/icons/icons8-linkedin-100.png" alt="Linkedin"></a>
-
-            <a href="https://github.com/RamiroMoralesdev" target="_blank">
-                <img src="./assets/icons/icons8-github-120.png" alt="Github"></a>
-
-            <a href="https://drive.google.com/file/d/1CT74SVVH6snHwLJJaDJSaNXv8fnrc0PS/view?usp=sharing" target="_blank">
-                <img src="./assets/icons/icons8-cv-100.png" alt="CvIcon"></a>
-        </div>
     </nav>
 
 
     <div class="content">
 
-
-    <section class="welcome">
-        <div class="buttons">
-            <button class="button_red"></button>
-
-            <button class="button_yellow"></button>
-
-            <button class="button_green"></button>
-
-        </div>
-        
-        <img src="./assets/Perfil.jpg" alt="Ramiro Morales" class="avatar">
-        <h1>Ramiro Morales</h1>
-        <h2>Web Developer and Designer</h2>
-        <hr class="divider">
-        <p>Si lo puedes imaginar, lo puedes programar</p>
-    </section>
-
     
+    <section class="header">
+
+        <section class="welcome">
+            <div class="buttons">
+                <button class="button_red"></button>
+    
+                <button class="button_yellow"></button>
+    
+                <button class="button_green"></button>
+    
+            </div>
+            
+            <img src="./assets/Perfil.jpg" alt="Ramiro Morales" class="avatar">
+            <h1>Ramiro Morales</h1>
+            <h2>Web Developer and Designer</h2>
+            <hr class="divider">
+            <p>Si lo puedes imaginar, lo puedes programar</p>
+        </section>
+    
+        <section class="studies">
+            <h1>Autodidacta</h1>
+            <article class="yt">
+                <h1>HTML5</h1>
+                <h2>Soy Dalto</h2>
+            </article>
+    
+            <article class="fcc">
+                <h1>HTML5 CSS3</h1>
+                <h3>Freecodecamp</h3> 
+            </article>
+    
+            <article class="yt">
+                <h1>CSS3</h1>
+                <h2>Nicolas Schurmman</h2>
+            </article>
+    
+            <article class="udemy">
+                <h1>CSS3, PYTHON Y MYSQL</h1>
+                <h2>Nicolas Schurmman</h2>
+                <button>
+                    <a href="">Ver Certificacion</a>
+                </button>
+                
+            </article>
+    
+            <article class="udemy">
+                <h1>Ciberseguridad</h1>
+                <h2>Alvaro Chirou</h2>
+                <button>
+                    <a href="">Ver Certificacion</a>
+                </button>
+                
+            </article>
+    
+            <article class="udemy">
+                <h1>Reflex desde cero</h1>
+                <h2>Mouredev</h2>
+            </article>
+    
+            <article class="todocode">
+                <h1>Git Basico</h1>
+                <h2>Luisina de Paula</h2>
+                <button>
+                    <a href="https://todocodeacademy.com/certificate/jhi/" target="_blank">Ver Certificacion</a>
+                </button>
+                
+            </article>
+    
+            
+        </section>
+
+    </section>
+        
     <section class="about-me">
-        <h1>Sobre mi</h1>
+        <h1>Sobre mi &hearts;</h1>
         <hr>
-        <p>Desde muy temprana edad me interesó el mundo de la informatica. Tengo experiencia en Desarrollo web Front-end y Diseño Grafico. Mi capacidad para adaptarme a tecnológicas me permite crear experiencias de usuario fluidas y atractivas.</p>
+        <p>Desde muy <strong>temprana edad</strong> me interesó el mundo de la informatica. <strong>Tengo experiencia en Desarrollo web Front-end y Diseño Grafico.</strong> Mi capacidad para <strong>adaptarme a tecnológicas</strong> me permite crear experiencias de usuario fluidas y atractivas.</p>
         <hr>
         <img src="./assets/icons/external_link.png" class="icon-external_link">
         <a href="https://ramicrack.vercel.app/" target="_blank">Visita mis redes sociales</a>
     </section>
 
 
-    <section class="skills-desktop"> 
+    <section class="skills-desktop" id="skills"> 
         
         <div class="background-skill">
             <img src="./assets/icons8-html-144.png" alt="HTML5">
@@ -75,17 +124,17 @@
 
     <div class="background-skill">
         <img src="./assets/icons8-css-200.png" alt="CSS3">
-        <p>Intermedio</p>
+        <p>Avanzado</p>
     </div>
 
     <div class="background-skill">
         <img src="./assets/icons8-javascript-144.png" alt="JavaScript">
-        <p>Aficionado</p>
+        <p>Intermedio</p>
     </div>
 
     <div class="background-skill">
         <img src="./assets/icons8-python-144.png" alt="Python">
-        <p>Intermedio</p>
+        <p>Aficionado</p>
     </div>
 
     <div class="background-skill">
@@ -123,134 +172,96 @@
         <p>Aficionado</p>
     </div>
         
+    <p style="color: #fff; font-size: 1.8em;">Honestamente no puedo asegurarte cuando conocemiento tengo. <a href="#contact" style="color: #ddd;">Ponme a prueba</a></p>
         
     </section>
 
-
-    <section class="skills-mobile"> <!--View only mobile-->
-        <img src="./assets/icons8-html-144.png" alt="HTML5">
-        <img src="./assets/icons8-css-200.png" alt="CSS3">
-        <img src="./assets/icons8-javascript-144.png" alt="JavaScript">
-        <img src="./assets/icons8-python-144.png" alt="Python">
-        <img src="./assets/icons8-tailwindcss-144.png" alt="Tailwindcss">
-        <img src="./assets/reflex.png" alt="Reflex Python">
-        <img src="./assets/Git_icon.png" alt="Git">
-        <img src="./assets/icons8-linux.png" alt="Linux">
-        <img src="./assets/icons8-photoshop-144.png" alt="Photoshop">
-        <img src="./assets/icons8-davinci-resolve-144.png" alt="Davinci Resolve">
-    </section>
-
-
-    <section class="studies" id="studies">
-        <h1>Estudios como autodidacta</h1>
-        <table> 
-            <thead>
-            <tr>
-                <th>Curso</th>
-                <th>Campo</th>
-                <th>Profesor</th>
-                <th>Plataforma</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>HTML5</td>
-                <td>Desarrollo Web</td>
-                <td>Lucas Dalto</td>
-                <td>Youtube</td>
-            </tr>
-            <tr>
-                <td>HTML5</td>
-                <td>Desarrollo Web</td>
-                <td></td>
-                <td>Freecodecamp.org</td>
-            </tr>
-            <tr>
-                <td>HTML5</td>
-                <td>Desarrollo Web</td>
-                <td>Freddy Vega</td>
-                <td>Platzi</td>
-            </tr>
-            <tr>
-                <td>CSS3</td>
-                <td>Desarrollo Web</td>
-                <td>Nicolas Schurmman</td>
-                <td>Youtube</td>
-            </tr>
-            <tr>
-                <td>CSS3</td>
-                <td>Desarrollo Web</td>
-                <td></td>
-                <td>Freecodecamp.org</td>
-            </tr>
-            <tr>
-                <td>CSS3</td>
-                <td>Desarrollo Web</td>
-                <td>Nicolas Schurmman</td>
-                <td>Udemy</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Desarrollo de Software <br> Desarrollo web Front-end</td>
-                <td>Nicolas Schurmman</td>
-                <td>Udemy</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Ciberseguridad</td>
-                <td>Alvaro Chirou</td>
-                <td>Udemy</td>
-            </tr>
-            <tr>
-                <td>Reflex desde cero</td>
-                <td>Desarrolo Web Front-end</td>
-                <td>Mouredev</td>
-                <td>Youtube</td>
-            </tr>
-            <tr>
-                <td>Git Basico</td>
-                <td>Repositorios</td>
-                <td>Luisina de Paula</td>
-                <td>Todo Code Academy</td>
-            </tr>
-            
-        </tbody>
-        </table>
-    </section>
-
-
-    <section class="certifications">
-        <h1>Certificaciones</h1>
-        <article>
-            <a href="https://www.freecodecamp.org/certification/fccd5d84fea-28e6-424c-ae2a-586a7dec5168/responsive-web-design" target="_blank"><img src="./assets/certifications/Captura de pantalla 2023-08-09 164320.png" alt="Freecodecamp Ramiro Morales"></a>
-        </article>
+            <h1>Mis mejores proyectos.</h1>
+        <section class="proyects" id="proyectos">
 
         <article>
-            <a href="https://todocodeacademy.com/certificate/jhi/" target="_blank">
-                <img src="./assets/certifications/Git Y Github TODOCODE.jpg" alt="TODOCODE Ramiro Morales">
-            </a>
-        </article>
-    </section>
-
-
-    <!--
-        <section class="proyects">
-        <h1>Mis mejores proyectos.</h1>
-        <article>
-            <img src="" alt="">
-            <hr class="separator-horizontal">
-            <span class="code-proyect">
+            <img src="https://calculator-ramiromoralesdev.vercel.app/favicon.png" alt="favicon">
+            <h1>Calculadora-JS</h1>
+            <div class="tecnologies">
+                <span>
+                    <p>Desarrollado con: </p>
+                     <img src="./assets/icons8-html-144.png" alt="HTML">
+                     <img src="./assets/icons8-css-200.png" alt="CSS">
+                     <img src="./assets/icons8-javascript-144.png" alt="JavaScript">
+                </span>
+            </div>
     
+            <span class="code-proyect">
+                <button>
+                    <a href="https://calculator-ramiromoralesdev.vercel.app/" target="_blank">
+                        <img src="assets/icons/external_link.png" alt="Visit">
+                    </a>
+                </button>
             </span>
-            <hr class="separator-vertical">
             <span class="view-proyect">
-
+                <button>
+                    <a href="https://github.com/RamiroMoralesdev/Calculator-JS" target="_blank">
+                        <img src="assets/icons/icons8-github-120.png" alt="Github">
+                    </a>
+                </button>
             </span>
         </article>
-    </section>
 
-    -->
+        <article>
+            <img src="https://calculator-ramiromoralesdev.vercel.app/favicon.png" alt="favicon">
+            <h1>Calculadora-JS</h1>
+            <div class="tecnologies">
+                <span>
+                    <p>Desarrollado con: </p>
+                     <img src="./assets/icons8-html-144.png" alt="HTML">
+                     <img src="./assets/icons8-css-200.png" alt="CSS">
+                     <img src="./assets/icons8-javascript-144.png" alt="JavaScript">
+                </span>
+            </div>
+    
+            <button>
+                <a href="https://calculator-ramiromoralesdev.vercel.app/" target="_blank">
+                    <img src="assets/icons/external_link.png" alt="Visit">
+                </a>
+            </button>
+        </span>
+        <span class="view-proyect">
+            <button>
+                <a href="https://github.com/RamiroMoralesdev/Calculator-JS" target="_blank">
+                    <img src="assets/icons/icons8-github-120.png" alt="Github">
+                </a>
+            </button>
+        </span>
+        </article>
+
+        <article>
+            <img src="https://calculator-ramiromoralesdev.vercel.app/favicon.png" alt="favicon">
+            <h1>Calculadora-JS</h1>
+            <div class="tecnologies">
+                <span>
+                    <p>Desarrollado con: </p>
+                     <img src="./assets/icons8-html-144.png" alt="HTML">
+                     <img src="./assets/icons8-css-200.png" alt="CSS">
+                     <img src="./assets/icons8-javascript-144.png" alt="JavaScript">
+                </span>
+            </div>
+    
+            <button>
+                <a href="https://calculator-ramiromoralesdev.vercel.app/" target="_blank">
+                    <img src="assets/icons/external_link.png" alt="Visit">
+                </a>
+            </button>
+        </span>
+        <span class="view-proyect">
+            <button>
+                <a href="https://github.com/RamiroMoralesdev/Calculator-JS" target="_blank">
+                    <img src="assets/icons/icons8-github-120.png" alt="Github">
+                </a>
+            </button>
+        </span>
+        </article>
+
+    </section>
 
 </div>
     
@@ -291,6 +302,17 @@
                 <input type="hidden" name="_captcha" value="false"> <!--Validacion formulario-->
             </form>
         </section>        
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/ramiro-morales-909a12219/" target="_blank">
+                <img src="./assets/icons/icons8-linkedin-96.png" alt="Linkedin"></a>
+    
+            <a href="https://github.com/RamiroMoralesdev" target="_blank">
+                <img src="./assets/icons/icons8-github-120.png" alt="Github"></a>
+    
+            <a href="assets/files/Ramiro Morales.pdf" target="_blank">
+                <img src="./assets/icons/icons8-cv-100.png" alt="CvIcon"></a>
+        </div>
 
     </footer>
 </body>
