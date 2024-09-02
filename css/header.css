@@ -1,10 +1,10 @@
 :root {
   --background: #0c151d;
   --primary-color: #0a0a23;
-  --shadow: #087ec4;
+  --shadow: #cc8338;
   --text-color: #fff;
   --secondary-text-color: #ccc;
-  --header-table: #4a5568;
+  --header-table: #cc8338;
   scroll-behavior: smooth;
   overflow-x: hidden;
   scrollbar-color: var(--text-color) var(--primary-color);
@@ -93,7 +93,6 @@
 .studies {
   width: 40%;
   height: 80%;
-  background-color: var(--background);
   color: var(--secondary-text-color);
   margin-top: 8%;
   display: flex;
@@ -104,11 +103,14 @@
   scrollbar-color: var(--shadow) var(--primary-color);
   scrollbar-width: thin;
   text-align: center;
+  font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 
   & article {
     width: 100%;
     height: 20%;
-    background-color: var(--header-table);
     border-left: 5px solid var(--shadow);
     margin-top: 10px;
     background-size: 100px;
@@ -120,10 +122,12 @@
       color: var(--text-color);
       text-align: left;
       margin-left: 150px;
+      margin-bottom: 0;
     }
 
     & h2{
       font-size: 1em;
+      margin-left: -100px;
     }
 
     & button{
