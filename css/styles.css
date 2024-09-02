@@ -67,7 +67,6 @@ nav {
   font-size: 20px;
   padding: 10px 0;
   text-wrap: balance;
-  text-align: center;
 }
 
 .icon-external_link {
@@ -77,13 +76,9 @@ nav {
   display: inline;
 }
 
-.about-me {
-  margin-bottom: 2em;
-
-& a {
+.about-me a {
   text-decoration: none;
   color: var(--text-color);
- }
 }
 
 .skills-desktop {
@@ -96,7 +91,10 @@ nav {
   & .background-skill {
     width: 200px;
     height: 200px;
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--shadow);
+    text-align: center;
 
     & img {
       width: 144px;
@@ -261,7 +259,7 @@ nav {
 footer {
   margin-top: 100px;
   width: 100vw;
-  height: 700px;
+  height: 100%;
   background-color: var(--header-table);
   padding: 40px 0 40px 0;
 }
@@ -305,18 +303,5 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    }
-
-    footer {
-      width: 100%;
-      height: fit-content;
-    }
-
-    .contact {
-      display: none;
-    }
-
-    .contact form {
-      width: 100vw;
     }
   }
