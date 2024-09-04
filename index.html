@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=400, initial-scale=1">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="icon" href="./assets/favicon transparent.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,6 +61,22 @@
                 <h2>Web Developer and Designer</h2>
                 <hr class="divider">
                 <p>Si lo puedes imaginar, lo puedes programar</p>
+            </section>
+
+            <section class="terminal-animate">
+                
+                    <div class="terminal-loader">
+                    <div class="terminal-header">
+                        <div class="terminal-title">Status</div>
+                        <div class="terminal-controls">
+                        <div class="control close"></div>
+                        <div class="control minimize"></div>
+                        <div class="control maximize"></div>
+                        </div>
+                    </div>
+                    <div class="text">Loading...</div>
+                    </div>
+
             </section>
 
             <!-- <section class="studies">
@@ -229,14 +246,26 @@
     <footer>
 
         <div class="icons">
-            <a href="https://www.linkedin.com/in/ramiro-morales-909a12219/" target="_blank">
-                <img src="./assets/icons/icons8-linkedin-96.png" alt="Linkedin"></a>
+            <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#0092E4">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </button>
 
-            <a href="https://github.com/RamiroMoralesdev" target="_blank">
-                <img src="./assets/icons/icons8-github-120.png" alt="Github"></a>
+            <button class="btn">
+                  <svg width="40" height="40" fill="#0092E4" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github">
+                    <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path>
+                  </svg>
+                </button>
 
-            <a href="assets/files/Ramiro Morales.pdf" target="_blank">
-                <img src="./assets/icons/icons8-cv-100.png" alt="CvIcon"></a>
+            <button class="btn">
+              <a href="assets/files/Ramiro Morales.pdf" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#0092E4">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"/>
+                  <path d="M10 13h4v1h-4zm0 3h4v1h-4zm0-6h1v1h-1z"/>
+                </svg>
+              </a>
+            </button>
         </div>
 
     </footer>

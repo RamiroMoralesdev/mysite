@@ -21,7 +21,7 @@
   height: 120vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  
 }
 
 .welcome {
@@ -39,6 +39,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
     margin-top: 100px;
     margin-bottom: 0;
   }
