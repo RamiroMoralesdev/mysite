@@ -54,6 +54,7 @@ nav {
   background-color: var(--primary-color);
   border-radius: 15px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about-me h1 {
