@@ -328,7 +328,10 @@ footer {
   .proyects {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    & article {
+      width: 100%;
+    }
     }
   }
