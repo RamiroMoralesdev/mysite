@@ -1,0 +1,53 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta title="RamiroMoralesdev">
+    	<meta name="description" content="Ramiro Morales | Web Developer and Designer">
+    	<meta name="author" content="RamiroMoralesdev">
+    	<meta name="keywords"
+        content="Ramiro Morales, RamiroMoralesdev, Diseño de paginas web, Ramiro Morales Funes, Ramiro Morales Programador, Ramiro Morales RM Producciones, RM Producciones ramigenio,">
+
+		<link rel="icon" type="image/svg+xml" href="src/assets/favicon transparent.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+
+	:root {
+		--background: #13151a;
+		--primary-color: #0a0a23;
+	}
+
+  body {
+
+		font-family: "Jost", 
+		system-ui;font-optical-sizing: auto;
+		font-weight: 200; 
+		font-style: normal;
+		background: var(--background);
+	}
+
+	p {
+		text-wrap: balance;
+	}
+	
+</style>
