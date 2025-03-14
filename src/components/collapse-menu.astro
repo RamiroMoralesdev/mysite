@@ -1,0 +1,33 @@
+---
+import Proyects from '../components/proyects.astro'
+import Certifications from '../components/certifications.astro';
+import Studies from '../components/studies.astro';
+---
+
+    <section class="flex justify-center items-center">
+    <button class="btn btn-primary m-5 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#proyects" aria-expanded="false" aria-controls="proyects">Proyectos</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">Certificaciones</button>
+
+    </section>
+
+  <div class="row">
+    <div class="col">
+      <div class="multi-collapse" id="proyects">
+        <div class="card card-body bg-red-500">
+          <Proyects></Proyects>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col">
+      <div class="multi-collapse" id="certifications">
+        <div class="card card-body">
+          <Certifications></Certifications>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,11 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Buttons from '../components/buttons.astro';
 import Header from '../components/header.astro';
 import Skills from '../components/skills.astro';
-import Proyects from '../components/proyects.astro'
-import Certifications from '../components/certifications.astro';
-import Studies from '../components/studies.astro';
-import Timeline from '../components/Timeline.astro';
+import CollapseMenu from '../components/collapse-menu.astro';
 import Footer from '../components/footer.astro'
 
 ---
@@ -13,10 +11,13 @@ import Footer from '../components/footer.astro'
 <Layout title="Ramiro Morales | Web Developer and Designer">
 	
 	<Header></Header>
-	<Skills></Skills>
-	<Proyects></Proyects>
-	<Certifications></Certifications>
-	<Studies></Studies>
+	<section class="bg-[#0a0a10] border-solid border-2 rounded-lg">
+		<Buttons></Buttons>
+
+		<Skills></Skills>
+		<CollapseMenu></CollapseMenu>
+
+	</section>
 	<Footer></Footer>
 
 </Layout>
