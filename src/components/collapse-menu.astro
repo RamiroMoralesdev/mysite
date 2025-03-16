@@ -4,16 +4,19 @@ import Certifications from '../components/certifications.astro';
 import Studies from '../components/studies.astro';
 ---
 
-    <section class="flex justify-center items-center">
-    <button class="btn btn-primary m-5 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#proyects" aria-expanded="false" aria-controls="proyects">Proyectos</button>
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">Certificaciones</button>
+    <section class="flex justify-center items-center gap-3">
+    <button class="btn btn-primary p-3" type="button" data-bs-toggle="collapse" data-bs-target="#proyects" aria-expanded="false" aria-controls="proyects">Proyectos</button>
+    <button class="btn btn-primary p-3" type="button" data-bs-toggle="collapse" data-bs-target="#certifications" aria-expanded="false" aria-controls="certifications">Certificaciones Y Estudios</button>
+
 
     </section>
 
+    <div id="colapsemultiples">
+
   <div class="row">
     <div class="col">
-      <div class="multi-collapse" id="proyects">
-        <div class="card card-body bg-red-500">
+      <div class="multi-collapse" id="proyects" data-bs-parent="#colapsemultiples">
+        <div class="card card-body">
           <Proyects></Proyects>
         </div>
       </div>
@@ -23,11 +26,28 @@ import Studies from '../components/studies.astro';
 
   <div class="row">
     <div class="col">
-      <div class="multi-collapse" id="certifications">
+      <div class="multi-collapse" id="certifications" data-bs-parent="#colapsemultiples">
         <div class="card card-body">
           <Certifications></Certifications>
+          <Studies></Studies>
         </div>
       </div>
     </div>
   </div>
+
+
   
+</div>
+
+  <style>
+    .collapse {
+  visibility: visible !important;
+  height: auto !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+  .card {
+    background-color: #0a0a10 !important;
+  }
+
+  </style>
