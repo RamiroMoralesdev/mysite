@@ -4,28 +4,26 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description:
-      "Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.",
-    image: "/modern-ecommerce-website.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+    title: "",
+    description: "",
+    image: "",
+    tags: [],
     github: "#",
     demo: "#",
   },
   {
-    title: "Task Manager App",
-    description: "Aplicación de gestión de tareas con drag & drop, colaboración en tiempo real y notificaciones.",
-    image: "/task-management-dashboard.png",
-    tags: ["React", "Node.js", "Socket.io"],
+    title: "",
+    description: "",
+    image: "",
+    tags: [],
     github: "#",
     demo: "#",
   },
   {
-    title: "Portfolio CMS",
-    description:
-      "Sistema de gestión de contenido para portfolios creativos con editor visual y generación de sitios estáticos.",
-    image: "/creative-portfolio-cms.jpg",
-    tags: ["Vue.js", "GraphQL", "MongoDB"],
+    title: "",
+    description: "",
+    image: "",
+    tags: [],
     github: "#",
     demo: "#",
   },
@@ -36,7 +34,7 @@ export function Projects() {
     <section id="projects" className="min-h-screen flex items-center px-6 md:px-12 py-20">
       <div className="max-w-6xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">Projects</h2>
-        <div className="grid grid-cols-1 gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           {projects.map((project) => (
             <Card key={project.title} className="overflow-hidden bg-card border-border">
               <div className="grid md:grid-cols-2 gap-6">

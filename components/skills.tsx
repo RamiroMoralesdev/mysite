@@ -4,23 +4,28 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Grid3x3, LayoutGrid } from "lucide-react"
 import { useState } from "react"
+import { ca } from "date-fns/locale"
 
 const skills = [
   {
     category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
+    items: ["HTML", "CSS", "JavaScript", "TypeScript" ],
+  },
+  {
+    category: "Frameworks & Libraries",
+    items: ["ReactJs", "Tailwind CSS", "Bootstrap", "Astro"],
+  },
+  {
+    category: "CMS",
+    items: ["WordPress", "Strapi", "KeyStatic"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"],
+    items: ["Python", "Java", "MySQL", "PostgreSQL", "Supabase"],
   },
   {
     category: "Tools",
-    items: ["Git", "Docker", "Vercel", "Figma", "VS Code"],
-  },
-  {
-    category: "Soft Skills",
-    items: ["Problem Solving", "Team Work", "Communication", "Adaptability"],
+    items: ["Git", "Docker", "Vercel", "Figma", "VS Code", "Postman", "Dbeaver", "Netbeans", "Notion", "Sistemas basados en Linux"],
   },
 ]
 

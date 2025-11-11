@@ -34,7 +34,7 @@ export function About() {
   }, [visibleLines])
 
   return (
-    <section id="about" className="min-h-screen flex items-center px-6 md:px-12 py-20">
+    <section id="about" className="min-h-screen flex justify-center items-center px-6 md:px-12 py-20">
       <div className="max-w-4xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">About me</h2>
 

@@ -1,4 +1,7 @@
 export function Hero() {
+
+  const description = "Desarrollador Front-end, con conocimientos basicos pero funcionales en Backend, especializado en crear experiencias web modernas y accesibles."
+ 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 md:px-12 overflow-hidden">
       {/* Futuristic background */}
@@ -32,7 +35,7 @@ export function Hero() {
       <div className="max-w-4xl relative z-10">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 text-balance">Ramiro Morales</h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-          Desarrollador Front-end, con conocimientos basicos en Backend, especializado en crear experiencias web modernas y accesibles
+        {description}
         </p>
         <div className="flex gap-4">
           <a

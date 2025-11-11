@@ -7,15 +7,13 @@ import { Textarea } from "@/components/ui/textarea"
 import { Mail, Linkedin, Github, Twitter } from "lucide-react"
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "mailto:tu@email.com", label: "Email" },
+  { icon: Github, href: "https://github.com/RamiroMoralesdev", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/ramimorales/", label: "LinkedIn" },
 ]
 
 export function Contact() {
   return (
-    <section id="contact" className="min-h-screen flex items-center px-6 md:px-12 py-20">
+    <section id="contact" className="min-h-screen flex justify-center items-center px-6 md:px-12 py-20">
       <div className="max-w-4xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Contact</h2>
         <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
@@ -46,7 +44,7 @@ export function Contact() {
                 {socialLinks.map((social) => {
                   const Icon = social.icon
                   return (
-                    <a
+                    <a target="blank"
                       key={social.label}
                       href={social.href}
                       className="flex items-center gap-3 p-3 bg-muted hover:bg-muted/70 rounded-lg transition-colors group"
@@ -60,13 +58,7 @@ export function Contact() {
                 })}
               </div>
             </Card>
-
-            <Card className="p-6 bg-card border-border">
-              <h3 className="text-xl font-semibold text-foreground mb-2">Disponible para trabajar</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Actualmente abierto a nuevas oportunidades freelance y colaboraciones interesantes.
-              </p>
-            </Card>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGw2djl1NDIwa2h2azB6MHlycjZkeWp6and5MzFtMnVzNHd2cmN3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jBOOXxSJfG8kqMxT11/giphy.gif" alt="" />
           </div>
         </div>
       </div>
