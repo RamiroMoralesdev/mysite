@@ -3,7 +3,7 @@ import { Award } from "lucide-react"
 
 export function Certificates() {
   return (
-    <section id="certificates" className="min-h-screen flex items-center px-6 md:px-12 py-20">
+    <section id="certificates" className="min-h-screen flex justify-center items-center px-6 md:px-12 py-20">
       <div className="max-w-6xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">Certificates</h2>
 

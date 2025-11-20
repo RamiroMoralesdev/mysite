@@ -13,7 +13,7 @@ const studies = [
 
 export function Studies() {
   return (
-    <section id="studies" className="min-h-screen flex items-center px-6 md:px-12 py-20">
+    <section id="studies" className="min-h-screen flex justify-center items-center px-6 md:px-12 py-20">
       <div className="max-w-6xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">Studies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

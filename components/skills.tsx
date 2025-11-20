@@ -40,6 +40,7 @@ const getSkillIcon = (skill: string) => {
     "VS Code": <Code2 className="w-4 h-4 text-blue-600" />,
     "Postman": <Wrench className="w-4 h-4 text-orange-500" />,
     "Dbeaver": <Database className="w-4 h-4 text-blue-500" />,
+    "BUN, NPM, PNPM": <Wrench className="w-4 h-4 text-orange-500" />,
     "Netbeans": <Code2 className="w-4 h-4 text-green-600" />,
     "Notion": <Wrench className="w-4 h-4 text-gray-600" />,
     "Sistemas basados en Linux": <Server className="w-4 h-4 text-yellow-600" />,
@@ -55,7 +56,7 @@ const skills = [
   },
   {
     category: "Frameworks & Libraries",
-    items: ["ReactJs", "Tailwind CSS", "Bootstrap", "Astro"],
+    items: ["ReactJs",  "Tailwind CSS", "Bootstrap", "Astro"],
   },
   {
     category: "CMS",
@@ -67,7 +68,7 @@ const skills = [
   },
   {
     category: "Tools",
-    items: ["Git", "Docker", "Vercel", "Figma", "VS Code", "Postman", "Dbeaver", "Netbeans", "Notion", "Sistemas basados en Linux"],
+    items: ["Git", "Docker", "Vercel", "Figma", "VS Code", "Postman", "Dbeaver", "BUN, NPM, PNPM", "Vite", "Netbeans", "Notion", "Sistemas basados en Linux"],
   },
 ]
 
@@ -75,7 +76,7 @@ export function Skills() {
   const [viewMode, setViewMode] = useState<"cards" | "logos">("cards")
 
   return (
-    <section id="skills" className="min-h-screen flex items-center px-6 md:px-12 py-20">
+    <section id="skills" className="min-h-screen flex items-center justify-center px-6 md:px-12 py-20">
       <div className="max-w-6xl w-full">
         <div className="flex items-center justify-between mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">Skills</h2>
