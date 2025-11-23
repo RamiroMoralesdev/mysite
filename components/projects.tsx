@@ -4,39 +4,39 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "",
-    description: "",
-    image: "",
-    tags: [],
+    title: "Gym Manager",
+    description: "Mi primer SAAS completo, una aplicacion para gestionar gimnasios con funcionalidades como gestion de miembros, pagos, asistencias. Con integracion para socios en un portal.",
+    image: "/gym-manager-preview.png",
+    tags: ["React", "Typescript", "Supabase"],
     github: "#",
-    demo: "#",
+    demo: "https://v0-gym-saas.vercel.app/",
   },
   {
-    title: "",
-    description: "",
-    image: "",
-    tags: [],
+    title: "El Blog de Pelis",
+    description: "Plataforma web de peliculas y series",
+    image: "/blog-pelis-preview.png",
+    tags: ["Astro", "KeyStatic", "TailwindCSS"],
     github: "#",
-    demo: "#",
+    demo: "https://elblogdepelis.vercel.app/",
   },
   {
-    title: "",
-    description: "",
-    image: "",
+    title: "Fito Theme",
+    description: "Tema para VSCODE",
+    image: "/fito-theme-preview.png",
     tags: [],
     github: "#",
-    demo: "#",
+    demo: "https://fito-theme.ramiromorales.com.ar/",
   },
 ]
 
 export function Projects() {
   return (
-    <section id="projects" className="min-h-screen flex items-center px-6 md:px-12 py-20">
+    <section id="projects" className="min-h-screen flex items-center justify-center px-6 md:px-12 py-20">
       <div className="max-w-6xl w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">Projects</h2>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col  gap-8 justify-center items-center">
           {projects.map((project) => (
-            <Card key={project.title} className="overflow-hidden bg-card border-border">
+            <Card key={project.title} className="min-w-full overflow-hidden bg-card border-border">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="relative h-64 md:h-auto bg-muted">
                   <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
