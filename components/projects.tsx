@@ -5,11 +5,11 @@ import Image from "next/image"
 const projects = [
   {
     title: "Gym Manager",
-    description: "Mi primer SAAS completo, una aplicacion para gestionar gimnasios con funcionalidades como gestion de miembros, pagos, asistencias. Con integracion para socios en un portal.",
+    description: "Mi primer SaaS completo, una aplicacion para gestionar gimnasios con funcionalidades revulocionarias en el mercado",
     image: "/gym-manager-preview.png",
     tags: ["React", "Typescript", "Supabase"],
     github: "#",
-    demo: "https://v0-gym-saas.vercel.app/",
+    demo: "https://gym-core-web.vercel.app/",
   },
   {
     title: "El Blog de Pelis",
