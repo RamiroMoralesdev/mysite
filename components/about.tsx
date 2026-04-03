@@ -8,15 +8,15 @@ const terminalLines = [
   { type: "command", text: "$ cat bio.txt" },
   {
     type: "output",
-    text: "Soy un desarrollador apasionado por crear soluciones digitales elegantes y funcionales.",
+    text: "No solo desarrollo interfaces. Construyo productos digitales con un objetivo claro: convertir ideas en soluciones reales que generen impacto.",
   },
   {
     type: "output",
-    text: "Cuento con una sólida formación en Desarrollo web y Diseño Grafico, lo que me permite crear interfaces web modernas, funcionales y optimizadas para diferentes dispositivos.",
+    text: "Soy Frontend Developer & Designer, enfocado en crear experiencias modernas, funcionales y centradas en el usuario, combinando diseño, rendimiento y buenas prácticas.",
   },
   {
     type: "output",
-    text: "que no solo lucen bien, sino que también ofrecen una experiencia de usuario excepcional.",
+    text: "Me interesa crear, aprender y llevar ideas a la realidad. No me conformo con lo básico: busco construir soluciones que funcionen, escalen y aporten valor real.",
   },
   { type: "cursor", text: "" },
 ]
