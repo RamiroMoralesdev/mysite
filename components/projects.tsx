@@ -4,12 +4,12 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Gym Manager",
-    description: "Mi primer SaaS completo, una aplicacion para gestionar gimnasios con funcionalidades revulocionarias en el mercado",
-    image: "/gym-manager-preview.png",
-    tags: ["React", "Typescript", "Supabase"],
+    title: "GymCore Software",
+    description: "Sistema SaaS (Software as a Service) integral para la gestión administrativa y financiera de gimnasios, diseñado para reemplazar las clásicas planillas de Excel y modernizar por completo la operación de un negocio fitness.",
+    image: "/gym-core-preview.png",
+    tags: ["React", "Typescript", "Supabase", "Auth", "Integridad de datos"],
     github: "#",
-    demo: "https://gym-core-web.vercel.app/",
+    demo: "https://gymcore.ar",
   },
   {
     title: "El Blog de Pelis",
